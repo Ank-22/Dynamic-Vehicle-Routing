@@ -1,0 +1,112 @@
+<!-- https://colorhunt.co/palette/144399 -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/static/bootstrap.min.css">
+        <script src="/static/bootstrap.min.js"></script>
+        <title>Home-Page</title>
+        <style>
+            body{
+               
+                background-color:#222831;
+                background-repeat: no-repeat;
+                background-size: cover;
+                color:#eeeeee;
+                font-size: 12pt;
+                font-family:'verdana';
+                width: 100%;
+                height: 100%;
+                margin-left: 0;
+                /* margin-top: -2rem !important; */
+            }
+            #h1_1{
+                font-family:'Agency FB';
+                font-size: 36pt;
+                color:#222831;
+                margin-bottom:-.2em;
+                margin-left: 1.5em;
+            }
+            #h6_1{
+                font-weight: 900;
+                font-family:'Agency FB';
+                color:#eeeeee ;
+                margin-left: 1.85em;
+            }
+            #h2_1{
+                font-family:'Agency FB';
+                font-size: 24pt;
+                text-align: center;
+                margin : "1px";
+                color:#12d3cf;
+            }
+            #header_1{
+                background-color:#d65a31;
+                background-size: cover;
+                width: 100%;
+                /* height: 100%; */
+            }
+            #li_1{
+                font-size: 14pt;
+                font-family: 'Century Gothic'
+           }
+        </style>
+    </head>
+    <body>
+        <div id="header_1">
+            <h1 id="h1_1">PDS<br>
+            <h6 id="h6_1">Package Delivery Services</h6>
+            </h1>
+            <nav class="navbar navbar-expand-sm bg-light">
+                    <ul class="navbar-nav">
+                            <li class="nav-item">
+                              <a style="color:#d65a31;" class="nav-link" href="/home-page" >HOME</a>
+                            </li>
+                            <li class="nav-item">
+                              <a style="color:#d65a31;" class="nav-link" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                              <a style="color:#d65a31;" class="nav-link" href="/VRP">VRP</a>
+                            </li>
+                            <li class="nav-item">
+                                <a style="color:#d65a31;" class="nav-link" href="/Address">Address</a>
+                              </li>
+                          </ul>
+                </nav>
+                </div>
+
+                
+       
+        
+          
+       
+        <section>
+            <p>
+                <h2 id="h2_1">Welcome to Package Delivery Services</h2>
+                
+                <br><br>
+                <div class="row" >
+                    <div class="col-md-2">
+
+                    </div>
+              <div class="col-md-8">
+
+                Please enter the detail as Follows & We will get it as Fast as Possiable<br><br>
+                <form action="http://localhost:5000/process"  method = "post">
+                        
+                            <div class="form-group">
+                            <label class="mr-sm-2">Name </label>  <input name="Name" type="text" class="form-control mb-2 mr-sm-2">
+                            </div>           
+                            <div class="form-group">
+                           <label class="mr-sm-2"> Address</label> <input name="Full Address" type="text" class="form-control mb-2 mr-sm-2">
+                            </div>
+                            <input type="submit" value="Submit" class="btn btn-primary">
+                          
+            </form>
+        </div>
+        </div>
+            </p>
+        </section>
+    </body>
+</html>
